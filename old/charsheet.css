@@ -1,0 +1,127 @@
+html, body { height: 100%; width: 100%; margin: 0 auto;}
+input[type=button] {font-size: 24pt; }
+.statHeader { 
+font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22pt; 
+}
+.timeSpans {
+font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22pt; display: inline-block; top: -50%; 
+}
+
+.block {
+  text-align: center;
+}
+ 
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+ }
+ 
+/* Div shared attributes */
+
+
+#dossier, #container, #speedDiv, #mightDiv, #sanityDiv, #knowledgeDiv, #timeDiv, #timeDivContainer {
+
+text-align: center;
+position: relative;
+float: left;
+font-size: 24pt;
+overflow: hidden;
+
+}
+
+#timeDiv {
+/*position: absolute; 
+top: 50%;
+transform: translate(0, -25%)*/
+}
+
+/* Div height and width */
+
+
+#dossier {
+height: 025%; width: 100%;
+}
+#container {
+height: 060%; width: 100%;
+}
+#speedDiv, #mightDiv, #sanityDiv, #knowledgeDiv {
+height: 100%; width: 025%; 
+}
+#timeDivContainer { 
+height: 015%; width: 100%; 
+}
+#timeDiv { 
+height: 100%; width: 100%; 
+}
+
+/* Div background colors */
+
+body, #container, #speedDiv, #sanityDiv, #timeDiv, #timeDivContainer { 
+background-color: #333333; 
+}
+
+#dossier, #mightDiv, #knowledgeDiv { 
+background-color: #444444; 
+}
+
+/**********
+* iPhone *
+***********/
+
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+
+/* Div height and width */
+
+html, body { height: 960px; width: 640px; }
+
+#dossier {
+height: 240px; width: 640px;
+}
+#container {
+height: 720px; width: 640px;
+}
+#speedDiv, #mightDiv, #sanityDiv, #knowledgeDiv {
+height: 594px; width: 160px; 
+}
+#timeDivContainer { 
+height: 126px; width: 640px; 
+}
+#timeDiv { 
+height: 100px; width: 640px; 
+}
+
+
+#timeDiv {
+position: absolute;
+margin:-13px, 0px;
+}
+
+
+}
+
+/* iPad */
+
+@media only screen 
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+#timeDiv {
+/*position: absolute; 
+top: 0%;
+transform: translate(0, 0%);*/
+margin: 0 auto;
+max-width: 700px;
+}
+
+}

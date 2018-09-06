@@ -1,35 +1,35 @@
 html, body { height: 100%; width: 100%; margin: 0 auto;}
 
 li {
-list-style: none
+  list-style: none
 }
 
 input[type=button] {font-size: 24pt; }
-.statHeader { 
-font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22pt; 
+.statHeader {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22pt;
 }
 .timeSpans {
-font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22pt; display: inline-block; top: -50%; 
+  font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 22pt; display: inline-block; top: -50%;
 }
 
 .block {
   text-align: center;
 }
- 
+
 .block:before {
   content: '';
   display: inline-block;
-  height: 100%; 
+  height: 100%;
   vertical-align: middle;
   margin-right: -0.25em;
  }
- 
+
 .centered {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
  }
- 
+
 /* Div shared attributes */
 
 
@@ -44,7 +44,7 @@ overflow: hidden;
 }
 
 #timeDiv {
-/*position: absolute; 
+/*position: absolute;
 top: 50%;
 transform: translate(0, -25%)*/
 }
@@ -58,32 +58,32 @@ height: 025%; width: 100%;
 #container {
 height: 060%; width: 100%;
 }
-.Speed, .Might, .SanityDiv, .Knowledge {
-height: 100%; width: 025%; 
+.Speed, .Might, .Sanity, .Knowledge {
+height: 100%; width: 025%;
 }
-#timeDivContainer { 
-height: 015%; width: 100%; 
+#timeDivContainer {
+height: 015%; width: 100%;
 }
-#timeDiv { 
-height: 100%; width: 100%; 
+#timeDiv {
+height: 100%; width: 100%;
 }
 
 /* Div background colors */
 
-body, #container, .Speed, .SanityDiv, #timeDiv, #timeDivContainer { 
+body, #container, .Speed, .Sanity, #timeDiv, #timeDivContainer {
 
-background-color: #333333; 
+background-color: #333333;
 }
 
-#dossier, .Might, .Knowledge { 
-background-color: #444444; 
+#dossier, .Might, .Knowledge {
+background-color: #444444;
 }
 
 /**********
 * iPhone *
 **********/
 
-@media only screen 
+@media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
 
@@ -98,13 +98,13 @@ height: 240px; width: 640px;
 height: 720px; width: 640px;
 }
 #speedDiv, #mightDiv, #sanityDiv, #knowledgeDiv {
-height: 594px; width: 160px; 
+height: 594px; width: 160px;
 }
-#timeDivContainer { 
-height: 126px; width: 640px; 
+#timeDivContainer {
+height: 126px; width: 640px;
 }
-#timeDiv { 
-height: 100px; width: 640px; 
+#timeDiv {
+height: 100px; width: 640px;
 }
 
 
@@ -118,12 +118,12 @@ margin:-13px, 0px;
 
 /* iPad */
 
-@media only screen 
+@media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
 
 #timeDiv {
-/*position: absolute; 
+/*position: absolute;
 top: 0%;
 transform: translate(0, 0%);*/
 margin: 0 auto;
