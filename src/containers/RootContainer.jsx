@@ -14,7 +14,7 @@ class RootContainer extends React.Component {
          //</div>
   render() {
     return (
-      <Stats character="brandon"/>
+      <Stats character="missy"/>
     )
   }
 }

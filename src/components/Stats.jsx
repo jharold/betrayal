@@ -19,7 +19,7 @@ class Stats extends React.Component {
 
   statCounter = (stat) => {
     let character = this.state.character[stat]
-    let currentIndex = this.state.index[stat] 
+    let currentIndex = this.state.index[stat]
     let increaseStat = () => {
       if (currentIndex > 0) {
         this.setState({index: {...this.state.index, [stat]: currentIndex - 1}})
@@ -30,10 +30,10 @@ class Stats extends React.Component {
         this.setState({index: {...this.state.index, [stat]: currentIndex + 1}})
       }
     }
-    let drawStats = character.values.map((statValue, index) => 
-      (currentIndex === index) ? 
+    let drawStats = character.values.map((statValue, index) =>
+      (currentIndex === index) ?
       <span style={{color: this.state.character.color}}><li key={index}>{statValue}</li></span> :
-      <li key={index}>{statValue}</li> 
+      <li key={index}>{statValue}</li>
     )
     let upperCaseStatName = stat.replace(/^\w/, (letter) => { return letter.toUpperCase() })
     return(
@@ -52,18 +52,23 @@ class Stats extends React.Component {
 
 render() {
     return (
-      <div>
-        <div className="Knowledge">
-          {this.statCounter("knowledge")}
+      <div className="StatsContainer">
+        <div className="Portrait">
+            <img src={require(`../images/${this.props.character}.jpg`)} />
         </div>
-        <div className="Speed">
-          {this.statCounter("speed")}
-        </div>
-        <div className="Might">
-          {this.statCounter("might")}
-        </div>
-        <div className="Sanity">
-          {this.statCounter("sanity")}
+        <div className="Stats">
+          <div className="Knowledge">
+            {this.statCounter("knowledge")}
+          </div>
+          <div className="Speed">
+            {this.statCounter("speed")}
+          </div>
+          <div className="Might">
+            {this.statCounter("might")}
+          </div>
+          <div className="Sanity">
+            {this.statCounter("sanity")}
+          </div>
         </div>
       </div>
     )
